@@ -224,32 +224,200 @@ export const portfolioData = {
 
   photography: [
     {
-      title: "Mountain Peaks",
       location: "Swiss Alps, Switzerland",
       date: "2024-08",
-      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4",
-      description: "Sunrise over the majestic peaks of the Swiss Alps"
+      coverImage: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4",
+      photos: [
+        {
+          image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4",
+          title: "Sunrise at Matterhorn",
+          description: "Golden hour illuminating the iconic Matterhorn peak"
+        },
+        {
+          image: "https://images.unsplash.com/photo-1531366936337-7c912a4589a7",
+          title: "Alpine Meadows",
+          description: "Wildflowers blooming in the high alpine meadows"
+        },
+        {
+          image: "https://images.unsplash.com/photo-1531973576160-7125cd663d86",
+          title: "Mountain Lake",
+          description: "Crystal clear glacial lake reflecting the surrounding peaks"
+        },
+        {
+          image: "https://images.unsplash.com/photo-1434725039720-aaad6dd32dfe",
+          title: "Cable Car Journey",
+          description: "Ascending through the clouds to reach the summit"
+        }
+      ]
     },
     {
-      title: "Urban Exploration",
       location: "Tokyo, Japan",
       date: "2024-05",
-      image: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf",
-      description: "Neon-lit streets of Shibuya at night"
+      coverImage: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf",
+      photos: [
+        {
+          image: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf",
+          title: "Shibuya Crossing",
+          description: "The famous scramble crossing illuminated at night"
+        },
+        {
+          image: "https://images.unsplash.com/photo-1513407030348-c983a97b98d8",
+          title: "Neon Alleyways",
+          description: "Narrow streets filled with colorful signs and lanterns"
+        },
+        {
+          image: "https://images.unsplash.com/photo-1503899036084-c55cdd92da26",
+          title: "Tokyo Tower at Dusk",
+          description: "The iconic tower standing tall against the twilight sky"
+        },
+        {
+          image: "https://images.unsplash.com/photo-1492571350019-22de08371fd3",
+          title: "Traditional Temple",
+          description: "Ancient architecture amidst the modern cityscape"
+        },
+        {
+          image: "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc",
+          title: "Cherry Blossom Season",
+          description: "Sakura trees in full bloom along the river"
+        }
+      ]
     },
     {
-      title: "Coastal Wanderings",
       location: "Big Sur, California",
       date: "2024-03",
-      image: "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f",
-      description: "Dramatic coastline meeting the Pacific Ocean"
+      coverImage: "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f",
+      photos: [
+        {
+          image: "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f",
+          title: "Bixby Bridge",
+          description: "The iconic bridge spanning the coastal canyon"
+        },
+        {
+          image: "https://images.unsplash.com/photo-1501594907352-04cda38ebc29",
+          title: "McWay Falls",
+          description: "Waterfall cascading onto the pristine beach below"
+        },
+        {
+          image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4",
+          title: "Coastal Sunset",
+          description: "Sun setting over the Pacific Ocean horizon"
+        }
+      ]
     },
     {
-      title: "Desert Solitude",
-      location: "Sahara, Morocco",
+      location: "Sahara Desert, Morocco",
       date: "2023-11",
-      image: "https://images.unsplash.com/photo-1509316785289-025f5b846b35",
-      description: "Endless dunes under a starlit sky"
+      coverImage: "https://images.unsplash.com/photo-1509316785289-025f5b846b35",
+      photos: [
+        {
+          image: "https://images.unsplash.com/photo-1509316785289-025f5b846b35",
+          title: "Dune Patterns",
+          description: "Wind-sculpted sand creating mesmerizing patterns"
+        },
+        {
+          image: "https://images.unsplash.com/photo-1473580044384-7ba9967e16a0",
+          title: "Starry Night",
+          description: "Milky Way visible above the desert dunes"
+        },
+        {
+          image: "https://images.unsplash.com/photo-1511497584788-876760111969",
+          title: "Camel Caravan",
+          description: "Traditional transport crossing the vast desert"
+        },
+        {
+          image: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800",
+          title: "Desert Sunrise",
+          description: "First light painting the dunes in golden hues"
+        }
+      ]
+    },
+    {
+      location: "Iceland",
+      date: "2023-09",
+      coverImage: "https://images.unsplash.com/photo-1504893524553-b855bce32c67",
+      photos: [
+        {
+          image: "https://images.unsplash.com/photo-1504893524553-b855bce32c67",
+          title: "Northern Lights",
+          description: "Aurora borealis dancing across the arctic sky"
+        },
+        {
+          image: "https://images.unsplash.com/photo-1483347756197-71ef80e95f73",
+          title: "Skógafoss Waterfall",
+          description: "Massive waterfall cascading down the cliffs"
+        },
+        {
+          image: "https://images.unsplash.com/photo-1476610182048-b716b8518aae",
+          title: "Jökulsárlón Glacier",
+          description: "Icebergs floating in the glacial lagoon"
+        }
+      ]
+    },
+    {
+      location: "Santorini, Greece",
+      date: "2023-07",
+      coverImage: "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff",
+      photos: [
+        {
+          image: "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff",
+          title: "Oia Sunset",
+          description: "White-washed buildings glowing in the sunset light"
+        },
+        {
+          image: "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e",
+          title: "Blue Domes",
+          description: "Iconic blue-domed churches overlooking the caldera"
+        },
+        {
+          image: "https://images.unsplash.com/photo-1533105079780-92b9be482077",
+          title: "Aegean Views",
+          description: "Dramatic cliffs meeting the deep blue sea"
+        }
+      ]
+    },
+    {
+      location: "Patagonia, Argentina",
+      date: "2023-04",
+      coverImage: "https://images.unsplash.com/photo-1501594907352-04cda38ebc29",
+      photos: [
+        {
+          image: "https://images.unsplash.com/photo-1501594907352-04cda38ebc29",
+          title: "Torres del Paine",
+          description: "The famous granite towers piercing the sky"
+        },
+        {
+          image: "https://images.unsplash.com/photo-1482192505345-5655af888803",
+          title: "Perito Moreno Glacier",
+          description: "Massive glacier walls in brilliant blue and white"
+        },
+        {
+          image: "https://images.unsplash.com/photo-1519681393784-d120267933ba",
+          title: "Mountain Reflection",
+          description: "Peaks mirrored perfectly in the still lake"
+        }
+      ]
+    },
+    {
+      location: "New Zealand",
+      date: "2023-02",
+      coverImage: "https://images.unsplash.com/photo-1469521669194-babb45599def",
+      photos: [
+        {
+          image: "https://images.unsplash.com/photo-1469521669194-babb45599def",
+          title: "Milford Sound",
+          description: "Dramatic fjord surrounded by towering peaks"
+        },
+        {
+          image: "https://images.unsplash.com/photo-1507699622108-4be3abd695ad",
+          title: "Lake Tekapo",
+          description: "Turquoise waters under the Southern Alps"
+        },
+        {
+          image: "https://images.unsplash.com/photo-1589802829985-817e51171b92",
+          title: "Glowworm Caves",
+          description: "Magical bioluminescent ceiling in the caves"
+        }
+      ]
     }
   ]
 };
