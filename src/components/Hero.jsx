@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowDown, Award } from 'lucide-react';
+import { Award } from 'lucide-react';
 
 const Hero = ({ profile, skills, achievements }) => {
   return (
@@ -63,23 +63,6 @@ const Hero = ({ profile, skills, achievements }) => {
                 </div>
               ))}
             </div>
-          </div>
-
-          {/* Scroll Indicator */}
-          <div className="mt-16 flex justify-center">
-            <a
-              href="#experience"
-              onClick={(e) => {
-                e.preventDefault();
-                document.querySelector('#experience').scrollIntoView({
-                  behavior: 'smooth',
-                  block: 'start'
-                });
-              }}
-              className="text-dark-text-muted hover:text-dark-text-secondary transition-colors animate-bounce"
-            >
-              <ArrowDown size={32} />
-            </a>
           </div>
         </div>
       </div>
