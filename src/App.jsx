@@ -1,42 +1,35 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navigation from './components/Navigation';
-import Hero from './components/Hero';
-import Experience from './components/Experience';
-import Projects from './components/Projects';
-import Publications from './components/Publications';
-import Talks from './components/Talks';
-import Blog from './components/Blog';
-import Photography from './components/Photography';
-import Contact from './components/Contact';
-import { portfolioData } from './data/portfolioData';
+import HomePage from './pages/HomePage';
+import ExperiencePage from './pages/ExperiencePage';
+import ProjectsPage from './pages/ProjectsPage';
+import PublicationsPage from './pages/PublicationsPage';
+import TalksPage from './pages/TalksPage';
+import BlogPage from './pages/BlogPage';
+import PhotographyPage from './pages/PhotographyPage';
+import ContactPage from './pages/ContactPage';
 
 function App() {
   return (
-    <div className="min-h-screen bg-dark-bg">
-      <Navigation />
+    <Router>
+      <div className="min-h-screen bg-dark-bg">
+        <Navigation />
 
-      <main>
-        <Hero
-          profile={portfolioData.profile}
-          skills={portfolioData.skills}
-          achievements={portfolioData.achievements}
-        />
-
-        <Experience experiences={portfolioData.experiences} />
-
-        <Projects projects={portfolioData.projects} />
-
-        <Publications publications={portfolioData.publications} />
-
-        <Talks talks={portfolioData.talks} />
-
-        <Blog blogPosts={portfolioData.blogPosts} />
-
-        <Photography photography={portfolioData.photography} />
-
-        <Contact profile={portfolioData.profile} />
-      </main>
-    </div>
+        <main>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/experience" element={<ExperiencePage />} />
+            <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="/publications" element={<PublicationsPage />} />
+            <Route path="/talks" element={<TalksPage />} />
+            <Route path="/blog" element={<BlogPage />} />
+            <Route path="/photography" element={<PhotographyPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+          </Routes>
+        </main>
+      </div>
+    </Router>
   );
 }
 
