@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { BookOpen, Calendar, Clock, Tag } from 'lucide-react';
 
 const Blog = ({ blogPosts }) => {
@@ -44,10 +45,19 @@ const Blog = ({ blogPosts }) => {
         {/* Blog Posts */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {filteredPosts.map((post, index) => (
-            <div
+            <Link
               key={index}
-              className="bg-dark-bg border border-dark-border rounded-lg p-6 hover:border-dark-text-muted transition-all hover:-translate-y-1 cursor-pointer"
+              to={`/blog/${post.slug}`}
+              className="block bg-dark-bg border border-dark-border rounded-lg p-6 hover:border-dark-text-muted transition-all hover:-translate-y-1"
             >
+              {post.image && (
+                <img
+                  src={post.image}
+                  alt={post.title}
+                  className="w-full h-48 object-cover rounded-lg mb-4 border border-dark-border"
+                />
+              )}
+
               <div className="flex items-start justify-between mb-3">
                 <span className="text-xs text-dark-text-primary bg-dark-surface px-3 py-1 rounded-full border border-dark-border">
                   {post.category}
@@ -88,7 +98,7 @@ const Blog = ({ blogPosts }) => {
                   ))}
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 
