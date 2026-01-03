@@ -46,7 +46,7 @@ const Navigation = () => {
             to="/"
             className="text-xl font-bold text-dark-text-primary hover:text-white transition-colors"
           >
-            Portfolio
+            SF.AI Portfolio
           </Link>
 
           {/* Desktop Navigation */}
